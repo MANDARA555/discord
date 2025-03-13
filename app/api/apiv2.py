@@ -4,7 +4,7 @@ from discord.ext import commands
 import os
 
 intents = discord.Intents.default()
-intents.voice_state_update = True  # ボイスステータスの変更を監視
+intents.voice_states = True  # ボイスステータスの変更を監視
 intents.messages = True
 
 bot = commands.Bot(command_prefix = "!", intents = intents)
