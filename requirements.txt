@@ -1,0 +1,17 @@
+aiohttp
+aiosignal
+anyio
+asgiref
+async-timeout
+attrs
+discord.py
+fastapi
+frozenlist
+h11
+idna
+multidict
+pydantic
+starlette
+typing_extensions
+uvicorn
+yarl
