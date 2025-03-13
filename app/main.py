@@ -30,7 +30,7 @@ async def on_voice_state_update(member, before, after):
     target_text_channel_name    = "参加中"      # 対象のテキストチャンネル
 
     # 入室イベントの判定
-    if before.channel is None and after.channnel is None:
+    if before.channel is None and after.channel is not None:
         if after.channel.name == target_voice_channnel:
             # ボイスチャンネルメンバーを取得
             if len(after.channel.members) == 1:
