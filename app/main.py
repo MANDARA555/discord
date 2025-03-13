@@ -11,8 +11,8 @@ dotenv.load_dotenv()
 
 TOKEN = os.environ['DISCORD_BOT_TOKEN']
 intents = discord.Intents.default()
-intents.message_content = True
-intents.voice_states = True
+intents.message_content = True  # メッセージ内容の処理
+intents.voice_states = True     # ボイスステータスの処理
 client = discord.Client(intents=intents)
 
 # @client.event
