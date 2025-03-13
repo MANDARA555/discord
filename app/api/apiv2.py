@@ -10,7 +10,7 @@ intents.messages = True
 bot = commands.Bot(command_prefix = "!", intents = intents)
 
 @bot.event
-async def on_vice_statate_update(member, before, after):
+async def on_voice_state_update(member, before, after):
     # ボイスチャンネルの入退室を検知
     target_voice_channnel       = "集会所1"     # 対象のボイスチャンネル
     target_text_channel_name    = "参加中"      # 対象のテキストチャンネル
