@@ -3,6 +3,10 @@ import dotenv
 import os
 from server import server_thread
 
+import asyncio
+
+# 新しいイベントループポリシーを設定
+asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
 dotenv.load_dotenv()
 
 TOKEN = os.environ['DISCORD_BOT_TOKEN']
