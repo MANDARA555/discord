@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-Token = ""
+Token = os.environ['DISCORD_BOT_TOKEN']
 
 # Bot立ち上げ
 DBot(

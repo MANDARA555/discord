@@ -11,6 +11,7 @@ h11
 idna
 multidict
 pydantic
+python-dotenv
 starlette
 typing_extensions
 uvicorn

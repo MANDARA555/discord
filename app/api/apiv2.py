@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 
+import os
+
 intents = discord.Intents.default()
 intents.voice_states_update = True  # ボイスステータスの変更を監視
 intents.messages = True
@@ -24,4 +26,4 @@ async def on_vice_statate_update(member, before, after):
                 if text_channel:
                     await text_channel.send(f"@mention {member.name} が {target_voice_channnel} に入室しました")
 
-bot.run("")
+bot.run(os.environ['DISCORD_BOT_TOKEN'])
