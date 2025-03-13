@@ -32,7 +32,7 @@ RUN pip install git+https://github.com/Pycord-Development/pycord
 EXPOSE 8080
 
 # ディレクトリ /root/src/appに移動
-WORKDIR /root/src/app/api
+WORKDIR /root/src/app
 
 # DiscordBotとFastAPIのサーバ起動
-CMD [ "python", "-u", "apiv2.py" ]
+CMD [ "python", "-u", "main.py" ]
