@@ -38,7 +38,7 @@ async def on_voice_state_update(member, before, after):
                 text_channel = discord.utils.get(member.guild.text_channels,
                                                  name = target_text_channel_name)
                 if text_channel:
-                    await text_channel.send(f"@モンハン {member.name} が {target_voice_channnel} に入室しました")
+                    await text_channel.send(f"@モンハン  {member.name} が {target_voice_channnel} に入室しました")
 
 # Koyeb用 サーバー立ち上げ
 server_thread()
