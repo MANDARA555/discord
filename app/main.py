@@ -32,7 +32,7 @@ async def on_voice_state_update(member, before, after):
                                                  name = target_text_channel_name)
                 if text_channel:
                     # 招待URLの生成
-                    invite = await after.channel.create_invite(max_age=19600)
+                    invite = await after.channel.create_invite()
                     await text_channel.send(
                         f"<@&{1343086891808981032}> {member.name} が {target_voice_channel} に入室しました！\n招待URL: {invite.url}"
                     )
@@ -44,7 +44,7 @@ async def on_voice_state_update(member, before, after):
                                                  name = target_text_channel_name)
                 if text_channel:
                     # 招待URLの生成
-                    invite = await after.channel.create_invite(max_age=19600)
+                    invite = await after.channel.create_invite()
                     await text_channel.send(
                         f"<@&{1343087023761657897}> {member.name} が {target_voice_channel2} に入室しました！\n招待URL: {invite.url}"
                     )
